@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>Hello world</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquam facere ipsam nesciunt corrupti maiores! Architecto laboriosam, praesentium ad cum, minima magni non nulla voluptates nobis debitis error eveniet harum.</p>
+     -->
+    <!-- <div data-widget-name="menu">
+        Choose the genre
+     </div> -->
+    <!-- <ul>
+        <li>
+            <a href="http://google.com/%22%3Ehttp://google.com">http://google.com</a>
+        </li>
+        <li>
+            <a href="/tutorial">/tutorial.html</a>
+        </li>
+        <li>
+            <a href="local/path">local/path</a>
+        </li>
+        <li>
+            <a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a>
+        </li>
+        <li>
+            <a href="http://nodejs.org/%22%3Ehttp://nodejs.org">http://nodejs.org</a>
+        </li>
+        <li>
+            <a href="http://internal.com/test%22%3Ehttp://internal.com/test">http://internal.com/test</a>
+        </li>
+    </ul> -->
+
+    <!-- <ol id="elem">
+        <li>Hello</li>
+        <li>World</li>
+    </ol> -->
+    <!-- <ul id="myList">
+
+    </ul> -->
+    <!-- <ul>
+        <li>Animals
+          <ul>
+            <li>Mammals
+              <ul>
+                <li>Cows</li>
+                <li>Donkeys</li>
+                <li>Dogs</li>
+                <li>Tigers</li>
+              </ul>
+            </li>
+            <li>Other
+              <ul>
+                <li>Snakes</li>
+                <li>Birds</li>
+                <li>Lizards</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Fishes
+          <ul>
+            <li>Aquarium
+              <ul>
+                <li>Guppy</li>
+                <li>Angelfish</li>
+              </ul>
+            </li>
+            <li>Sea
+              <ul>
+                <li>Sea trout</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+     -->
+    
+    <script>
+    // console.log(document.body.innerHTML);
+
+    // document.querySelector("h1").innerHTML ="goodBye wolrd !";
+
+    //Afficher la valeur de data-widget-name = menu
+    // console.log(document.querySelector("div").getAttribute("data-widget-name"));
+    
+//     let links = document.querySelectorAll('[a]');
+
+// for (let link of links) {
+//     let href = link.getAttribut('href');
+//    if (!href) continue; //no attribute
+
+//    if (!href.include('://'))continue; // no protocole
+
+//    if (href.startsWitch('http://internal.com/%27))continue; //internal
+
+//    link.style.color='orange';
+// }
+// function clear(elem){
+//     elem.innerHTML="";
+// }
+// clear (elem);
+
+
+
+    // let ul = document.createElement("ul");
+    // while(true){
+    //     let content = prompt("Un contenu");
+    //     if (content == null){
+    //         break;
+    //     }
+    //     else{
+    //         let x = document.createElement("li");
+    //         let t = document.createTextNode(content);
+    //         x.appendChild(t);
+    //         document.getElementById("myList").appendChild(x);
+    //     }
+        
+    // }
+
+    // let ul = document.createElement("ul");
+    // document.body.append(ul);
+    // while(true){
+    //     let content = prompt("Un contenu");
+    //     if (content == null){
+    //         break;
+    //     }
+    //     else{
+    //         let li = document.createElement("li");
+    //         li.textContent = content;
+    //         ul.append(li);
+    //     }
+        
+    // }
+
+//     let data = {
+//   "Fish": {
+//     "trout": {},
+//     "salmon": {}
+//   },
+
+//   "Tree": {
+//     "Huge": {
+//       "sequoia": {},
+//       "oak": {}
+//     },
+//     "Flowering": {
+//       "redbud": {},
+//       "magnolia": {}
+//     }
+//   }
+// };
+    // //méthode courte
+    // document.querySelectorAll('li>ul')
+    //     .forEach(list => list.closest('li')
+    //         .firstChild.nodeValue += ` [${list.children.length}]`);
+
+    // //méthode détaillée
+    // let lists = document.querySelectorAll('li>ul');
+    // list.forEach(function(list){
+    //     let counter = list.children.length;
+    //     let container = list.closest('li');
+    //     container.firstChild.nodeValue += `[${counter}]`;
+    // })
+  showNotification({
+  top: 10, // 10px from the top of the window (by default 0px)
+  right: 10, // 10px from the right edge of the window (by default 0px)
+  html: "Hello!", // the HTML of notification
+  className: "welcome" // an additional class for the div (optional)
+  });
+
+
+  function showNotification(obj){
+    let notification = document.createElement("div");
+    notification.style.top = obj.top;
+    notification.style.right = obj.right;
+    notification.innerHTML = obj.html;
+    notification.className = "notification" +((obj.className) ? " "+ obj.className :" ")
+    ;
+    notification.elem.insertAdjacentHTML("")
+  }
+    
+    </script>
+</body>
+
+</html>}
